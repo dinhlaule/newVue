@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue JS Template</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="obj">
+		<!-- <p v-html="testHTML"></p>
+		<p v-once>{{ noidung }} - {{ showTitle() }}</p>
+		<p>{{ sayHello() }}</p>
+		<a v-bind:href="link">My Company</a> -->
+		<!-- <button v-on:click="clickButton">Click me!</button>
+		<p>Giá trị: {{ count }}</p>
+		<p>Giá trị: {{ count <= 10 ? 'In' : 'Out' }}</p>
+		<div v-on:mousemove="moveMouse">
+			<p>Tọa độ: {{ x }} : {{ y }}</p>
+			<span v-on:mousemove.stop="">STOP EVENT!</span>
+		</div> -->
+		<!-- <div class="">
+			<button v-on:click="a++">Tang a</button>
+			<button v-on:click="b++">Tang b</button>
+			<p>Giá trị a: {{ tanga }}</p>
+			<p>Giá trị b: {{ tangb }}</p>
+			
+			<a v-bind:href="link">My Account</a>
+		</div>
+
+		<div class="">
+			<input type="text" @keyup.space.enter.delete.tab.up="inputSt">Nhập gì đó -->
+			<!-- <a href="www.facebook.com">My Account</a> -->
+		<!-- </div> -->
+		<div>
+			<button @click="click">Change the link</button>
+			<a v-bind:href="link">My Link</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		new Vue ({
+			el: '#obj',
+			data: {
+				// noidung: 'Hello',
+				// tieude: 'Một ngày nắng',
+				link: 'https://neo.vn',
+				// testHTML: '<a href="https://instagram.com">Get Password</a>',
+				// count: 0,
+				// diem: 'Điểm của bạn là 7.',
+				// a: 0,
+				// b: 0
+			},
+			// computed: {
+			// 	tanga: function() {
+			// 		console.log("Gọi function a");
+			// 		return this.a;
+			// 	},
+			// 	tangb: function() {
+			// 		console.log("Gọi function b");
+			// 		return this.b;
+			// 	}
+			// },
+
+			// watch: {
+			// 	diem: function(newValue) {
+			// 		alert("Điểm đã được nhập!");
+			// 	}
+			// },
+
+			methods: {
+				// sayHello: function() {
+				// 	document.write("Hellooooooooo!");
+				// },
+				// showTitle: function() {
+				// 	this.noidung = 'Changed!';
+				// 	return this.noidung;
+				// },
+				// clickButton: function() {
+				// 	this.count++;
+				// },
+				// moveMouse: function(event) {
+				// 	this.x = event.clientX;
+				// 	this.y = event.clientY;
+				// },
+				// stopEvent: function(event) {
+				// 	event.stopPropagation();
+				// },
+				// inputSt: function() {
+				// 	alert("Không hợp lệ!");
+				// }
+				click: function() {
+					this.link = "https://instagram.com";
+				}
+			}
+		})
+	</script>
+</body>
+</html>
